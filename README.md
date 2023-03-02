@@ -39,7 +39,7 @@ In the Getting Started section we executed the `build` command to generate a `ma
 
 Since the `app` project `index.js` only respectively the `subtract` and `divide` functions from `package-1` and `package-2` we expect that Webpack ESM treeshaking will not bundled the `add` and `multiply` functions.
 
-However, by looking in the app project resulting `main.js` file, we can see that the `multiply` function is added.
+By looking in the app project resulting `main.js` file, we can see that the `multiply` function is added, however the `add` function is not.
 
 The conclusion here is that Webpack ESM treeshaking do work as expected but the modules must be in distinct files.
 
