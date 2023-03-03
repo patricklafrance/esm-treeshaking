@@ -17,7 +17,7 @@ Go to the app project `dist` folder and open the `main.js` file.
 
 # What are you looking at?
 
-The POC include `package-1`, `package-2` and a random CJS module called `to-array` to prove that ESM and CJS packages can be bundled together. Those 3 packages are imported into a non "module" application called `app` and bundled with Webpack 5.
+The POC include `package-1`, `package-2`, `package-3` and a random CJS module called `to-array` to prove that ESM and CJS packages can be bundled together. Those 3 packages are imported into a non "module" application called `app` and bundled with Webpack 5.
 
 ## package-1 project
 
@@ -44,17 +44,21 @@ export function divide(x, y) {
 }
 ```
 
+## package-3 project
+
+This project contains 2 functions, `areEqual` and `areNotEqual` splitted in 2 distinct files. The only difference with this project is that it's imported via a packed `.tgz` file.
+
 ## app project
 
-This project is a single `index.js` file importing and using the `package-1`, `package-2` and `to-array` projects.
+This project is a single `index.js` file importing and using the `package-1`, `package-2`, `package-3` and `to-array` projects.
 
 ## Understand the content of the main.js file
 
 In the Getting Started section we executed the `build` command to generate a `main.js` in the `dist` folder.
 
-Since the `app` project `index.js` only import respectively the `subtract` and `divide` functions from `package-1` and `package-2` we expect that Webpack ESM treeshaking will not bundled the `add` and `multiply` functions.
+Since the `app` project `index.js` only import respectively the `subtract` and `divide`, `areNotEqual` functions from `package-1`, `package-2` and `package-3` we expect that Webpack ESM treeshaking will not bundled the `add`, `multiply` and `areEqual` functions.
 
-By looking in the `main.js` file, we can see that the `multiply` function is added, however the `add` function is not.
+By looking in the `main.js` file, we can see that the `multiply` function is added, however the `add` and `areEqual` functions are not.
 
 The conclusion here is that Webpack ESM treeshaking do work as expected but the modules must be in distinct files.
 

@@ -1,6 +1,5 @@
 node_modules
 dist
-*.tgz
 __MACOSX
 .DS_Store
 *.tsbuildinfo

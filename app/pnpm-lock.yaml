@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   package-1: ../package-1
   package-2: ../package-2
+  package-3: ../package-3/package-3-1.0.0.tgz
   to-array: 0.1.4
   webpack: 5.75.0
   webpack-bundle-analyzer: 4.8.0
@@ -11,6 +12,7 @@ specifiers:
 dependencies:
   package-1: link:../package-1
   package-2: link:../package-2
+  package-3: file:../package-3/package-3-1.0.0.tgz
   to-array: 0.1.4
 
 devDependencies:
@@ -953,3 +955,9 @@ packages:
       utf-8-validate:
         optional: true
     dev: true
+
+  file:../package-3/package-3-1.0.0.tgz:
+    resolution: {integrity: sha512-aq8KI3MF7wKy5yhpZ9YjPXyDCM+4HpFTf624WvFTteKIun4Q3FWJp14joM7UK6mqQn5WnCbogJQjppsM3/9dyw==, tarball: file:../package-3/package-3-1.0.0.tgz}
+    name: package-3
+    version: 1.0.0
+    dev: false

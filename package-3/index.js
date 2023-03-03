@@ -1,2 +1,2 @@
-export * from "./areEqual";
-export * from "./areNotEqual";
+export * from "./areEqual.js";
+export * from "./areNotEqual.js";
