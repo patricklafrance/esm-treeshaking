@@ -120,7 +120,7 @@ This project contains 2 TypeScript functions, `isUndefined` and `isNotUndefined`
 
 Both function are exported from an `index.ts` file.
 
-After compilation, the files are transpiled to JavaScript and their types declaration are available in collocated `.d.ts` files.
+The files are transpiled to JavaScript and their types declaration are available in collocated `.d.ts` files.
 
 #### package-5 project
 
@@ -128,7 +128,7 @@ This project contains 2 React components written in TS, `Page1` and `Page2` spli
 
 Both components are exported from an `index.ts` file.
 
-After compilation, the files are transpiled to JavaScript and their types declaration are available in collocated `.d.ts` files.
+The files are transpiled to JavaScript and their types declaration are available in collocated `.d.ts` files.
 
 #### app-ts-react
 
