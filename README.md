@@ -130,6 +130,10 @@ Both components are exported from an `index.ts` file.
 
 After compilation, the files are transpiled to JavaScript and their types declaration are available in collocated `.d.ts` files.
 
+#### app-ts-react
+
+This project is a single index.ts file importing and using the `package-4` and `package-5` projects. The app renders a single `Page2` React components.
+
 ## Understanding the content of the main.js file
 
 At first, `package-4` behave similarly to what has been observed previously with `package-1` and `package-3` in [Understanding the content of the main.js file](#understanding-the-content-of-the-mainjs-file) but `package-5` did not.
