@@ -1,0 +1,17 @@
+{
+    "name": "package-4",
+    "version": "1.0.0",
+    "author": "Patrick Lafrance",
+    "license": "ISC",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "pnpm build:clean && pnpm build:tsc",
+        "build:clean": "pnpm dlx rimraf dist",
+        "build:tsc": "tsc"
+    },
+    "devDependencies": {
+        "typescript": "4.9.5"
+    }
+  }

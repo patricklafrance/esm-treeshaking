@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        // The output environment that the code will be compiled for
+        "target": "ESNext",
+        // The output module resolution system that the code will be compiled for
+        "module": "ESNext",
+        // The input module resolution system (until https://github.com/microsoft/TypeScript/issues/37582 is fixed)
+        "moduleResolution": "node",
+        // Skip type checking of all declaration files
+        "skipLibCheck": true,
+        // Allow default imports from modules with no default export
+        "allowSyntheticDefaultImports": true,
+        // Transpile React JSX code to jsx-runtime
+        "jsx": "react-jsx",
+        // Import non-ES modules as default imports
+        "esModuleInterop": true,
+        // Disallow features that require cross-file information for emit
+        "isolatedModules": true,
+        // Emit TS declaration files
+        "declaration": true,
+        "noEmit": false,
+        // Transpiled file output folder
+        "outDir": "dist",
+        // Files to include
+        "rootDir": "src"
+    }
+
+
+
+}

@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "app-ts-react",
   "version": "1.0.0",
   "author": "Patrick Lafrance",
   "license": "ISC",
@@ -7,13 +7,16 @@
     "build": "webpack"
   },
   "dependencies": {
-    "package-1": "../package-1",
-    "package-2": "../package-2",
-    "package-3": "../package-3/package-3-1.0.0.tgz",
     "package-4": "../package-4",
-    "to-array": "0.1.4"
+    "package-5": "../package-5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "ts-loader": "9.4.2",
+    "typescript": "4.9.5",
     "webpack": "5.75.0",
     "webpack-bundle-analyzer": "4.8.0",
     "webpack-cli": "5.0.1"
