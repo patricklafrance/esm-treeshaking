@@ -2,8 +2,8 @@
 
 This POC explore 2 scenarios:
 
-- [Tree-shaking native ESM JS code with Webpack](#1--tree-shaking-native-esm-js-code-with-webpack)
-- [Tree-shaking TS + React ESM code with Webpack](#2--tree-shaking-ts--react-esm-code-with-webpack)
+- [Tree-shaking native ESM JS code with Webpack](#1---tree-shaking-native-esm-js-code-with-webpack)
+- [Tree-shaking TS + React ESM code with Webpack](#2---tree-shaking-ts--react-esm-code-with-webpack)
 
 ## 1 - Tree-shaking native ESM JS code with Webpack
 
