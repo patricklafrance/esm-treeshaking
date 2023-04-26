@@ -63,7 +63,7 @@ This project is a single `index.js` file importing and using the `package-1`, `p
 
 In the Getting Started section we executed the `build` command to generate a `main.js` in the `dist` folder.
 
-Since the `app` project `index.js` only import respectively the `subtract` and `divide`, `areNotEqual` functions from `package-1`, `package-2` and `package-3` we expect that Webpack ESM treeshaking will not bundled the `add`, `multiply` and `areEqual` functions.
+Since the `app` project `index.js` only import respectively the `subtract`, `divide` and `areNotEqual` functions from `package-1`, `package-2` and `package-3` we expect that Webpack ESM treeshaking will not bundled the `add`, `multiply` and `areEqual` functions.
 
 By looking in the `main.js` file, we can see that the `multiply` function is added, however the `add` and `areEqual` functions are not.
 
