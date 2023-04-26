@@ -17,7 +17,7 @@ pnpm install
 Build the app:
 
 ```bash
-pnpm dev
+pnpm build
 ```
 
 Go to the app project `dist` folder and open the `main.js` file.
