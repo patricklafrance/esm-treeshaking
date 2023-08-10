@@ -148,7 +148,7 @@ After adding the `sideEffects: false` field, only the `Page2` component is added
 
 # Conclusion
 
-Tree-shaking ESM code with Webpack 5 mostly work as expected if code is properly splitted in distinct files and the `sideEffects` field is added to the libraries `package.json` file.
+Tree-shaking ESM code with Webpack 5 mostly work as expected if the code is properly splitted in distinct files and the `sideEffects` field is added to the libraries `package.json` file.
 
 # Learn more
 
