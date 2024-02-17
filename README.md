@@ -150,6 +150,13 @@ After adding the `sideEffects: false` field, only the `Page2` component is added
 
 Tree-shaking ESM code with Webpack 5 mostly work as expected if code is properly splitted in distinct files and the `sideEffects` field is added to the libraries `package.json` file.
 
+## Note
+
+There are 2 layers of [tree shaking with Webpack](https://webpack.js.org/guides/tree-shaking/):
+
+- The first one is with the `sideEffects` field and depends on the code being properly splitted in distinct files. This one cannot eliminate in-file unused code.
+- The second one depends on the [Terser](https://webpack.js.org/plugins/terser-webpack-plugin/) plugin and can eliminate in0file unused code. It won't eliminate unused imports thought.
+
 # Learn more
 
 - https://www.codefeetime.com/post/tree-shaking-a-react-component-library-in-rollup/
