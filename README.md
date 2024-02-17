@@ -150,12 +150,18 @@ After adding the `sideEffects: false` field, only the `Page2` component is added
 
 Tree-shaking ESM code with Webpack 5 mostly work as expected if the code is properly splitted in distinct files and the `sideEffects` field is added to the libraries `package.json` file.
 
-## Note
+## Addendum
 
 There are 2 layers of [tree shaking with Webpack](https://webpack.js.org/guides/tree-shaking/):
 
-- The first one is with the `sideEffects` field and depends on the code being properly splitted in distinct files. This one cannot eliminate in-file unused code.
-- The second one depends on the [Terser](https://webpack.js.org/plugins/terser-webpack-plugin/) plugin and can eliminate in0file unused code. It won't eliminate unused imports thought.
+- The first one is with the `sideEffects` field and depends on the code being properly splitted in distinct files. This layer cannot eliminate in-file unused code.
+- The second one depends on the [Terser](https://webpack.js.org/plugins/terser-webpack-plugin/) plugin and can eliminate in-file unused code. It won't eliminate unused imports thought.
+
+According to [this article](https://medium.com/engineering-housing/dead-code-elimination-and-tree-shaking-at-housing-part-1-307a94b30f23), the most efficient way to tree shake would be in 3 steps:
+
+- Execute Terser on the code to eliminate in-file dead code
+- Execute webpack on the code to tree shake the modules/imports
+- Execute Terser in the code to minize the code
 
 # Learn more
 
