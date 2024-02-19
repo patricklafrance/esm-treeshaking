@@ -163,6 +163,12 @@ According to [this article](https://medium.com/engineering-housing/dead-code-eli
 - Execute webpack on the code to tree shake the modules/imports
 - Execute Terser in the code to minize the code
 
+### Development mode
+
+The Terser plugin won't be executed when in development but the `sideEffects` optimization will be applied. Therefore, it's super important to correctly use the `sideEffects` field and that the code is splitted properly in distinct files.
+
+More information is available [here](https://webpack.js.org/blog/2020-10-10-webpack-5-release/#development-production-similarity).
+
 # Learn more
 
 - https://www.codefeetime.com/post/tree-shaking-a-react-component-library-in-rollup/
