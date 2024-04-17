@@ -171,6 +171,7 @@ More information is available [here](https://webpack.js.org/blog/2020-10-10-webp
 
 # Learn more
 
+- https://github.com/orgs/web-infra-dev/discussions/17
 - https://www.codefeetime.com/post/tree-shaking-a-react-component-library-in-rollup/
 - https://webpack.js.org/guides/tree-shaking/
 - https://exploringjs.com/es6/ch_modules.html#static-module-structure
